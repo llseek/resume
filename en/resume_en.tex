@@ -1,0 +1,149 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage{graphicx}
+\setlength{\textheight}{10in} % increase text height to fit on 1-page
+
+
+\begin{document}
+
+\name{YUAN Xiaojie\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name
+
+\address{\bf  PRESENT ADDRESS\\Juli Road, Pudong New District,\\ Shanghai, China}
+\address{\bf CONTACT INFORMATION \\Mail: yxj0207@gmail.com \\Tel: (+86)18915778082 \\Homepage: www.llseek.com}
+
+
+\begin{resume}
+
+
+
+\section{EDUCATION}
+\vspace{0.03in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+   \vspace{-0.1in}
+   {\bf Shanghai Jiao Tong University} {\hfill 2009.9 - 2013.8\\}
+   \emph{Bachelor of Electrical \& Computer Engineering\\}
+   Major GPA: 3.25/4.0\\
+   CET-6: 583/710
+
+
+\section{COMPUTER SKILLS}
+\vspace{0.03in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+   \vspace{-0.1in}
+    Proficient in C programming in Linux environment\\
+    Proficient in development tools like Vim and Git\\
+    Experienced with programming in Bash, Python and Makefile\\
+    Familiar with embedded Linux development flow\\
+    Familiar with Linux IIO/UVC/PM subsystems\\
+    Familiar with commonly-used Design Patterns
+
+
+\section{WORK EXPERIENCE}
+\vspace{0.03in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+   \vspace{-0.1in}
+   {\bf Sony(China) Coporation Co., Ltd} {\hfill 2014.7 - present\\}
+   \emph{Senior Linux Kernel/Driver Engineer\\}
+   Responsible for design and development for sensor-related Linux driver and middleware
+
+   {\bf Kingtrust Technologies Co., Ltd.} {\hfill 2013.8 - 2014.5\\}
+   \emph{Firmware Engineer\\}
+   Responsible for STM32-based firmware development for RFID card reader
+
+
+\section{RESEARCH AND PROJECT}
+\vspace{0.03in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+   \vspace{-0.1in}
+   {\bf Development of sensor middleware for Vesper platform,} {\hfill 2015.1 - 2015.5, 2015.11 - 2016.4\\}
+   \emph {``Sensor Service"}\\
+Implement plugin which interacts with IIO sensors and sensorhub library.\\
+Implement plugin which replays GNSS/TRAM data from regular file.\\
+Perform integration test with service layer and enhance RPC performance.\\
+Implement unittest for Sensor Service with Python.\\
+Implement sample clients for application team to use.
+%~\\
+
+   {\bf Development and performance tunning for BMI160 driver,} {\hfill 2014.9 - 2016.7\\}
+   \emph {``BMI160 Driver"}\\
+Implement BMI160 driver based on Linux IIO framework.\\
+Add 'force read H/W fifo' feature to reduce latency of reading sensor data.\\
+Implement suspend/resume functionality to reduce power consumption.
+%~\\
+
+   {\bf Feature implementation for UVC Gadget driver} {\hfill 2015.6 - 2015.10\\}
+   \emph {``UVC Gadget Driver"}\\
+Backport configfs feature from mainline kernel to linux-3.10.\\
+Configure and enable super-speed bulk mode UVC gadget.\\
+Fix 'last pixel missing' issue in each video frame.\\
+Add YUV420 format support for uvcvideo and vivi driver.\\
+Optimize program to forward video frames from on-board cameras to UVC gadget driver.
+%~\\
+
+   {\bf Development of firmware for RFID card reader} {\hfill 2014.2 - 2014.5\\}
+   \emph {``RFID Reader Firmware"}\\
+Implement driver for PN512 which performs contactless communication with RFID cards.\\
+Implement peripheral drivers like TFT screen and fingerprint module.\\
+Discuss with hardware engineer to optimize PCB layout.
+%~\\
+
+   {\bf Capstone Project Sponsored by Intel, Shanghai,} {\hfill 2012.9 - 2012.12\\}
+   \emph {``Video Codec Auto Testing (Phase II)"}\\
+Develop a pipelined video codec auto-testing tool with C++ in Linux environment.\\
+Make use of OSS libraries including Xlib, OpenCV, Libdecodeqr to do image processing.\\
+Introduce QR code technique to realize video synchronization and frame-by-frame comparing.
+%~\\
+%
+%    {\bf Cross Compilaion of a Linux System,} {\hfill 2012.8\\}
+%    \emph{``Linux From Scratch''}\\
+%Cross compiled a tiny and bootable Linux system from downloaded tarballs including Binutils-2.22, Gcc-4.1.2, Glibc-2.5.1, Linux-2.6.25 kernel and etc.\\
+%The host system is GNU/Linux with Intel x86 microprocessor.
+%Carefully read through a 300-page manual and configure,compile,install step by step.
+%~\\
+
+%   {\bf Algorithm \& Data Structure Course Project,} \emph{Programmer} {\hfill Fall 2012\\}
+%    \emph {``Design of a Simple Database"}\\
+%Implemented a basic 2-3 tree which supports basic operations like insert, search, remove and list.\\
+%Designed a simple database system storing city information: population, net worth and name.\\
+%~\\
+
+%   {\bf Computer Networks Course Project,} \emph{Team Leader} {\hfill Summer 2012\\}
+%   \emph {``Simulation of MAC Protocols"}\\
+%Built the basic model based on C++ for simulating protocols of pure ALOHA and Slotted ALOHA.\\
+%Used Matlab to visualize the simulating result and did some relevant comparison and analysis work.\\
+%~\\
+
+%    {\bf Operating System Course Project,} {\hfill 2012.12\\}
+%    \emph {``Simulation of OS Algorithms"}\\
+%Made use of C++ to simulate the Round Robin Algorithm(responsible for process scheduling) and Banker's Algorithm(responsible for process resource distribution).
+%
+%    {\bf Computer Organization \& Design Course Project,} {\hfill 2011.10\\}
+%    \emph {``Design of Pipelined Microprocessor"}\\
+%Designed a five-stage pipelinded microprocessor with Verilog under Xilinx ISE 10.1.\\
+%Implemented five stages%(IF, ID, EX, MEM and WB)
+%, one forwarding unit and one hazard detection unit.\\
+%Assembled all the components and debugged the general prototype.
+
+
+\section{HONORS AND AWARDS}
+\vspace{0.03in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+   \vspace{-0.1in}
+Excellent Graduate, SJTU {(top 10\%)} {\hfill 2013.6\\}
+Third-Class Scholarship for Excellent Students, SJTU {(top 30\%~)}                     {\hfill 2012.6\\}
+Silver Prize of Capstone Projects {(2/15 groups)}                                      {\hfill 2012.12}
+
+
+\section{REFERENCE}
+\vspace{0.03in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+   \vspace{-0.1in}
+Github: github.com/llseek
+
+\end{resume}
+\end{document}
