@@ -1,5 +1,5 @@
-TARGET = resume.pdf
-SOURCE = resume.tex
+TARGET = resume_en.pdf
+SOURCE = resume_en.tex
 
 all: $(TARGET)
 
