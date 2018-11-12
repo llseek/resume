@@ -7,19 +7,14 @@
 \usepackage{graphicx}
 \setlength{\textheight}{10in} % increase text height to fit on 1-page
 
-
 \begin{document}
 
 \name{YUAN Xiaojie\\[12pt]}     % the \\[12pt] adds a blank
-				        % line after name
 
 \address{\bf  PRESENT ADDRESS\\Ziwei Road, Pudong New District,\\ Shanghai, China}
 \address{\bf CONTACT INFORMATION \\Mail: yxj0207@gmail.com \\Tel: (+86)18915778082}
 
-
 \begin{resume}
-
-
 
 \section{EDUCATION}
 \vspace{0.03in}
@@ -30,22 +25,23 @@
    Major GPA: 3.25/4.0\\
    CET-6: 583/710
 
-
 \section{COMPUTER SKILLS}
 \vspace{0.03in}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
    \vspace{-0.1in}
     Proficient in C programming and debugging in Linux environment\\
     Proficient in development tools like Vim and Git\\
-    Experienced with programming in Bash and Python\\
-    Experienced with CI/CD workflow using Jenkins\\
-    Familiar with Linux DRM/IIO/UVC/PM subsystems\\
-
+    Experienced with programming in C++, Bash and Python\\
+    Familiar with DRM/IIO/V4L2/PM subsystems of Linux Kernel
 
 \section{WORK EXPERIENCE}
 \vspace{0.03in}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
    \vspace{-0.1in}
+%   {\bf xxx Co., Ltd} {\hfill 201x.xx - present\\}
+%   \emph{Sr. Software Engineer\\}
+%   Responsible for xxx
+%
    {\bf Advanced Micro Devices (Shanghai) Co., Ltd} {\hfill 2016.11 - present\\}
    \emph{Sr. Software Engineer\\}
    Responsible for design, implement and maintain AMD GPU Linux driver
@@ -62,18 +58,27 @@
    \emph{Firmware Engineer\\}
    Responsible for STM32-based firmware development for RFID card reader
 
-
 \section{RESEARCH AND PROJECT}
 \vspace{0.03in}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
    \vspace{-0.1in}
-   {\bf Design and implement CI/CD workflow for testing AMDGPU driver,} {\hfill 2016.11 - present\\}
-   \emph {``Jenkins Automation"}\\
+%   {\bf xxx,} {\hfill 201x.xx - 201x.xx\\}
+%   \emph {``xxx"}\\
+%xxx.\\
+%xxx.
+%
+   {\bf Pre-silicon bring-up based on Zebu/Veloce Emulator,} {\hfill 2018.6 - present\\}
+   \emph {``AMDGPU Driver Bring-up"}\\
+Support new hardware IP cores based on current driver framework.\\
+Implement IP discovery feature to support dynamic IP core addition and configuration.\\
+Co-work with Emulator team to locate and fix potential bugs.
+
+   {\bf Design and implement CI/CD workflow for testing AMDGPU driver,} {\hfill 2016.12 - 2018.10\\}
+   \emph {``Jenkins Automation System"}\\
 Design and implement Jenkins pipelines for deploying and testing AMDGPU drivers.\\
 Implement bash/python helper scripts to build/package/install AMDGPU drivers.\\
 Implement Ansible playbooks to automate configuration on test machines.\\
-Extend shunit2 test framework to meet actual test requirements.\\
-%~\\
+Extend shUnit2 test framework to meet actual test requirements.
 
    {\bf Development of sensor middleware for Vesper platform,} {\hfill 2015.1 - 2015.5, 2015.11 - 2016.4\\}
    \emph {``Sensor Service"}\\
@@ -107,12 +112,12 @@ Implement peripheral drivers like TFT screen and fingerprint module.\\
 Discuss with hardware engineer to optimize PCB layout.
 %~\\
 
-%   {\bf Capstone Project Sponsored by Intel, Shanghai,} {\hfill 2012.9 - 2012.12\\}
-%   \emph {``Video Codec Auto Testing (Phase II)"}\\
-%Develop a pipelined video codec auto-testing tool with C++ in Linux environment.\\
-%Make use of OSS libraries including Xlib, OpenCV, Libdecodeqr to do image processing.\\
-%Introduce QR code technique to realize video synchronization and frame-by-frame comparing.
-%~\\
+   {\bf Capstone Project Sponsored by Intel, Shanghai,} {\hfill 2012.9 - 2012.12\\}
+   \emph {``Video Codec Auto Testing (Phase II)"}\\
+Develop a pipelined video codec auto-testing tool with C++ in Linux environment.\\
+Make use of OSS libraries including Xlib, OpenCV, Libdecodeqr to do image processing.\\
+Introduce QR code technique to realize video synchronization and frame-by-frame comparing.
+~\\
 %
 %    {\bf Cross Compilaion of a Linux System,} {\hfill 2012.8\\}
 %    \emph{``Linux From Scratch''}\\
