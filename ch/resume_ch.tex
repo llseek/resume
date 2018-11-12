@@ -7,10 +7,12 @@
 \usepackage{color}
 \definecolor{Blue}{rgb}{0.2,0.4,0.65}
 \usepackage{fontspec,xunicode}
-\setmainfont{WenQuanYi Zen Hei}
+%\setmainfont{WenQuanYi Zen Hei}
+\setmainfont{Calibri}
 \usepackage[slantfont,boldfont]{xeCJK}
 \usepackage{xcolor}
-\setCJKmainfont{WenQuanYi Zen Hei}
+%\setCJKmainfont{WenQuanYi Zen Hei}
+\setCJKmainfont{SL-Simplified}
 
 % adjust the page margin
 \usepackage[scale=0.85]{geometry}
@@ -19,9 +21,9 @@
 % personal data
 \firstname{袁晓杰}
 \familyname{}
-%\address{}{上海市闵行区东川路800号}
+%\address{}{上海市浦东新区紫薇路}
 \mobile{18915778082}
-\email{yuanxj@yuanxj.com}
+\email{yxj0207@gmail.com}
 \nopagenumbers{}
 
 % content
@@ -31,46 +33,118 @@
 \section{基本信息}
 \cvcomputer {毕业院校：}{上海交通大学}{最高学历：}{本科}
 \cvcomputer {专业方向：}{电子与计算机工程}{毕业时间：}{2013年8月}
-\cvcomputer {户籍地址：}{江苏省苏州市}{个人博客：}{www.yuanxj.com}
+\cvcomputer {户籍地址：}{江苏省苏州市太仓市}{Github：}{github.com/llseek}
+\cvline{}{}
 
 \section{IT技能}
-\cvline{*}{4年Linux使用经验}
-\cvline{*}{熟练掌握C语言程序开发}
-\cvline{*}{了解C++/Shell/Perl/Makefile}
-\cvline{*}{良好的代码阅读能力和编码风格}
-\cvline{*}{熟悉嵌入式Linux开发环境和开发流程}
-\cvline{*}{熟悉UART, SPI, I2C, USB等总线协议}
-\cvline{*}{熟悉ISO-14443A/B等RFID/NFC通讯协议}
-\cvline{*}{具备基于Cortex-M3和Cortex-A8的驱动开发经验}
+\cvline{-}{7年Linux使用和配置经验}
+\cvline{-}{熟练掌握C语言程序开发}
+\cvline{-}{熟悉C++/Bash/Python}
+\cvline{-}{熟悉嵌入式Linux开发环境和开发流程}
+\cvline{-}{熟悉Linux Kernel的DRM/IIO/V4L2/PM子系统}
+%\cvline{*}{熟悉UART, SPI, I2C, USB等总线协议}
+%\cvline{*}{熟悉ISO-14443A/B等RFID/NFC通讯协议}
+%\cvline{*}{具备基于Cortex-M3和Cortex-A8的驱动开发经验}
 %\cvline{*}{具备基于Cortex-M3的TFT屏/OLED屏/热敏打印机/指纹模块等外设的驱动开发经验}
 %\cvline{*}{具备基于Cortex-A8的GPIO/I2C/RTC驱动开发经验}
+\cvline{}{}
 
-\section{工作经验}
-\cvline{*}{\textcolor{Blue}{固件开发工程师， 上海人行道网络信息技术有限公司} \hfill 2013.8 - 2014.5}
-\cvline{*}{负责通用微控制器及专用安全芯片的固件开发}
-\cvline{*}{驱动/应用程序的代码实现，独立完成板级调试，协助团队完成系统调试}
-\cvline{*}{编写项目进程中的相关文档，包括相关项目文档和测试文档等}
+\section{工作经历}
+%\cvline{ }{\textcolor{Blue}{xxx} \hfill 201x年x日 - 201x年x日}
+%\cvline{-}{负责xxx}
+%\cvline{-}{负责xxx}
+%\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{GPU驱动工程师，超威半导体(上海)有限公司} \hfill 2016年11日 - 至今}
+\cvline{-}{负责基于Zebu/Veloce Emulator的下一代GPU驱动的Bring-up}
+\cvline{-}{负责设计与实现针对AMDGPU Graphics Stack的Jenkins自动化测试系统}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{多媒体中间件工程师，安霸半导体(上海)有限公司} \hfill 2016年9月 - 2016年11月}
+\cvline{-}{负责为安霸视频编解码芯片进行中间件和Demo应用的开发与维护}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{驱动工程师，索尼(中国)有限公司} \hfill 2014年7月 - 2016年8月}
+\cvline{-}{负责基于嵌入式Linux的Sensor和其他外设驱动的开发与维护}
+\cvline{-}{负责Sensor中间件的开发与维护}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{固件工程师， 上海奕华信息技术有限公司} \hfill 2013年8月 - 2014年5月}
+\cvline{-}{负责MCU以及专用安全芯片的固件开发}
+\cvline{-}{负责驱动/应用程序的代码实现，以及独立完成板级调试}
+%\cvline{-}{编写项目进程中的相关文档，包括相关项目文档和测试文档等}
+\cvline{}{}
 
 \section{项目经验}
-\cvline{*}{\textcolor{Blue}{基于Cortex-M3的多功能RFID USB读卡器} \hfill 2014年2月 - 2014年5月}
-\cvline{项目介绍}{此款RFID读卡器使用NXP的PN512读卡芯片，支持ISO-14443A/B协议,支持固件IAP升级；读卡器与上位机程序之间以自定义格式的协议报文通过USB接口进行通讯；读卡器固件采用RT-Thread（一种开源RTOS）进行线程调度与线程同步}
+%\cvline{ }{\textcolor{Blue}{xxx} \hfill 201x年x月 - 201x年x月}
+%\cvline{项目简述}{xxx}
+%\cvline{项目职责}{xxx}
+%\cvline{        }{xxx}
+%\cvline{}{}
+%
+\cvline{ }{\textcolor{Blue}{基于Zebu/Veloce Emulator的Pre-silicon GPU的Bring-up} \hfill 2018年6月 - 至今}
+\cvline{项目简述}{AMDGPU Driver需要在Pre-silicon阶段就开始开发与调试以减少Post-silicon之后的调试时间，从而缩短新一代GPU上市周期}
+\cvline{项目职责}{基于现有的驱动框架支持新一代的IP Core}
+\cvline{        }{与Emulator团队合作定位并修复潜在Bug}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{针对AMDGPU的Jenkins自动化测试系统的设计与实现} \hfill 2016年12月 - 2018年10月}
+\cvline{项目简述}{为了保证AMDGPU Driver的代码质量，需要搭建一套基于Jenkins的自动化编译/打包/部署/测试系统，此项目使用的主要编程语言是Bash/Python/Groovy}
+\cvline{项目职责}{从0设计并实现主从模式的部署/测试流程，目前支持30+台目标机，9代不同的GPU}
+\cvline{        }{支持每台目标机3分钟内自动重装各个Linux发行版(Ubuntu, Redhat, CentOS, SUSE等)}
+\cvline{        }{定制shUnit2单元测试框架以供QA方便编写测试脚本}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{Sensor Service - 基于嵌入式Linux的Sensor中间件的实现} \hfill 2015年1月 - 2015年5月,}
+\cvline{ }{{} \hfill 2015年11月 - 2016年4月}
+\cvline{项目简述}{Sensor Service作为用户空间的Daemon程序负责为上层应用提供读取Sensor数据的统一的一套API，支持的Sensor包括加速度计/陀螺仪/磁力计/气压计/光传感器/TRAM/GNSS/Geofence}
+\cvline{项目职责}{设计并实现三种Sensor Plugin:}
+\cvline{        }{- 与IIO Sensor(如BMI160)交互的Plugin(Buffer/Direct模式)}
+\cvline{        }{- 与索尼SensorHub交互的Plugin(异步回调模式)}
+\cvline{        }{- 从预录制文件读取Sensor数据的Plugin(用于测试)}
+\cvline{        }{实现基于PyUnit的单元测试}
+\cvline{        }{实现基于Sensor Service的各种Sample Client}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{BMI160 Driver - 6轴传感器驱动的实现和性能优化} \hfill 2014年9月 - 2016年7月}
+\cvline{项目简述}{BMI160是一种6轴的加速度/陀螺仪，作为智能眼镜的姿态/运动状态的数据来源，要求其驱动能够实时为上层提供当前采样数据，并支持设置采样频率和水位等参数}
+\cvline{项目职责}{实现基于Linux IIO驱动框架的BMI160驱动(当时开源版本还未出现)}
+\cvline{        }{添加能够强制读取当前HW Buffer中采样数据的Sysfs节点以降低数据延迟}
+\cvline{        }{支持Suspend/Resume功能以降低功耗}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{UVC Gadget Driver - 将外设模拟成一个Composite USB设备} \hfill 2015年6月 - 2015年10月}
+\cvline{项目简述}{智能眼镜项目需要将外设(眼镜上的Camera)上采集到的图像上传到Host，使用Linux Kernel里已有的UVC Gadget是最初的一种方案}
+\cvline{项目职责}{Backport主线Kernel中的ConfigFS特性到公司使用的3.10版本的Kernel}
+\cvline{        }{配置Super-speed Buld类型的UVC(默认为Isochronous)}
+\cvline{        }{为UVCVIDEO和VIVI驱动添加YUV420视频格式的支持}
+\cvline{        }{编写基于ConfigFS配置和生成ACM+ECM+UVC Composite USB外设的脚本}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{基于Cortex-M3的多功能RFID USB读卡器} \hfill 2014年2月 - 2014年5月}
+\cvline{项目介绍}{此款RFID读卡器使用NXP的PN512读卡芯片，支持ISO-14443A/B协议，支持固件IAP升级；读卡器与Host程序之间以自定义格式的协议报文通过USB接口进行通讯；读卡器固件采用的RTOS为RT-Thread}
 \cvline{项目职责}{负责PN512读卡芯片驱动，USB CDC虚拟串口驱动和固件IAP模块的板级开发调试}
+\cvline{}{}
 
-\cvline{*}{\textcolor{Blue}{基于Cortex-A8的嵌入式Linux驱动开发} \hfill 2013年12月 - 2014年5月}
-\cvline{项目介绍}{此项目为个人业余项目，主要目的是学习和巩固嵌入式Linux系统外设的驱动开发}
-\cvline{项目职责}{搭建嵌入式开发环境，包括安装交叉工具链，配置串口/TFTP/NFS/ssh等；为Beaglebone目标板交叉编译U-Boot和Linux-3.12.10内核；开发基于内核GPIO子系统用于控制外部蜂鸣器的内核模块；结合内核的设备模型分析DS1307驱动源码和框架}
+%\cvline{ }{\textcolor{Blue}{基于Cortex-A8的嵌入式Linux驱动开发} \hfill 2013年12月 - 2014年5月}
+%\cvline{项目介绍}{此项目为个人业余项目，主要目的是学习和巩固嵌入式Linux系统外设的驱动开发}
+%\cvline{项目职责}{搭建嵌入式开发环境，包括安装交叉工具链，配置串口/TFTP/NFS/ssh等；为Beaglebone目标板交叉编译U-Boot和Linux-3.12.10内核；开发基于内核GPIO子系统用于控制外部蜂鸣器的内核模块；结合内核的设备模型分析DS1307驱动源码和框架}
+%\cvline{}{}
 
-\cvline{*}{\textcolor{Blue}{基于Cortex-M3的指纹模块测试与评估} \hfill 2013年12月 - 2014年1月}
-\cvline{项目介绍}{此款指纹模块为公司某款安全产品准备采用的信息采集模块；此项目主要针对此指纹模块进行测试与评估，以决定方案的可行性}
-\cvline{项目职责}{依据Datasheet和Spec文档开发SPI接口的指纹模块驱动；驱动程序实现了检测手指接触的指纹自动采集功能和指纹数据上传功能；另外在Linux上位机端开发了基于串口的指纹接收与基于OpenCV的指纹图像清晰化处理程序}
+%\cvline{ }{\textcolor{Blue}{基于Cortex-M3的指纹模块测试与评估} \hfill 2013年12月 - 2014年1月}
+%\cvline{项目介绍}{此款指纹模块为公司某款安全产品准备采用的信息采集模块；此项目主要针对此指纹模块进行测试与评估，以决定方案的可行性}
+%\cvline{项目职责}{依据Datasheet和Spec文档开发SPI接口的指纹模块驱动；驱动程序实现了检测手指接触的指纹自动采集功能和指纹数据上传功能；另外在Linux上位机端开发了基于串口的指纹接收与基于OpenCV的指纹图像清晰化处理程序}
+%\cvline{}{}
 
-\cvline{*}{\textcolor{Blue}{基于Cortex-M3的TFT液晶屏驱动和人机界面开发} \hfill 2013年9月 - 2013年10月}
-\cvline{项目介绍}{此TFT液晶屏主要应用于编码采集器上，显示采集器中存储的菜名和当天单价等信息，用户可以使用采集器上的专用键盘切换界面}
-\cvline{项目职责}{编写TFT屏底层驱动；根据美工提供的界面图片实现人机界面的显示与切换；使用TFT液晶屏控制器提供的缓冲区加快屏幕刷新速度以弥补硬件设计中的不足}
+%\cvline{*}{\textcolor{Blue}{基于Cortex-M3的TFT液晶屏驱动和人机界面开发} \hfill 2013年9月 - 2013年10月}
+%\cvline{项目介绍}{此TFT液晶屏主要应用于编码采集器上，显示采集器中存储的菜名和当天单价等信息，用户可以使用采集器上的专用键盘切换界面}
+%\cvline{项目职责}{编写TFT屏底层驱动；根据美工提供的界面图片实现人机界面的显示与切换；使用TFT液晶屏控制器提供的缓冲区加快屏幕刷新速度以弥补硬件设计中的不足}
+%\cvline{}{}
 
-\cvline{*}{\textcolor{Blue}{基于Linux的视频Codec自动测试工具开发} \hfill 2012年9月 - 2012年12月}
+\cvline{ }{\textcolor{Blue}{基于Linux的视频Codec自动测试工具开发} \hfill 2012年9月 - 2012年12月}
 \cvline{项目介绍}{此项目为Intel SSG赞助的毕业设计项目，目的是开发一款视频Codec的自动测试工具；使用OpenCV/Decodeqr/Jpeg等开源库对X11捕获的视频帧进行提取特征值等一系列处理；依据从二维码解析出来的信息对视频帧进行同步与比较，以确定Codec优劣与否；项目中使用的版本控制工具为git}
-\cvline{项目职责}{负责OpenCV图像处理模块和pthread多线程框架的代码实现}
+\cvline{项目职责}{负责OpenCV图像处理模块和Pthread多线程框架的代码实现}
+\cvline{}{}
 
 %\cvline{*}{\textcolor{Blue}{编译小型Linux系统(LFS)} \hfill 2012年8月}
 %\cvline{介绍}{在Fedora 17环境下使用Linux-Kernel-3.5.2、Binutils-2.22、Gcc-4.7.1、Glibc-2.16.0等源码包和一些必要的补丁编译个一个小型的可启动Linux系统，boot loader为GRUB-2.00}
