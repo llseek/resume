@@ -6,6 +6,11 @@ all: $(TARGET)
 $(TARGET): $(SOURCE)
 	xelatex $<
 
+fonts:
+	mkdir -p ~/.fonts
+	cp ../fonts/* ~/.fonts/
+	fc-cache -f -v
+
 .PHONY: clean
 
 clean:
