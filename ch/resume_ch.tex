@@ -33,15 +33,16 @@
 \section{基本信息}
 \cvcomputer {毕业院校：}{上海交通大学}{最高学历：}{本科}
 \cvcomputer {专业方向：}{电子与计算机工程}{毕业时间：}{2013年8月}
-\cvcomputer {户籍地址：}{江苏省苏州市太仓市}{Github：}{github.com/llseek}
+\cvcomputer {户籍地址：}{江苏省苏州市}{Github：}{github.com/llseek}
 \cvline{}{}
 
 \section{IT技能}
-\cvline{-}{7年Linux使用和配置经验}
+\cvline{-}{9年Linux使用和配置经验}
 \cvline{-}{熟练掌握C语言程序开发}
 \cvline{-}{熟悉C++/Bash/Python}
-\cvline{-}{熟悉嵌入式Linux开发环境和开发流程}
+\cvline{-}{熟悉x86和ARM平台的Linux开发和调试环境}
 \cvline{-}{熟悉Linux Kernel的DRM/IIO/V4L2/PM子系统}
+\cvline{-}{熟悉AMDGPU驱动的硬件初始化/任务调度/内存管理等模块}
 %\cvline{*}{熟悉UART, SPI, I2C, USB等总线协议}
 %\cvline{*}{熟悉ISO-14443A/B等RFID/NFC通讯协议}
 %\cvline{*}{具备基于Cortex-M3和Cortex-A8的驱动开发经验}
@@ -56,8 +57,9 @@
 %\cvline{}{}
 
 \cvline{ }{\textcolor{Blue}{GPU驱动工程师，超威半导体(上海)有限公司} \hfill 2016年11日 - 至今}
-\cvline{-}{负责基于Zebu/Veloce Emulator的下一代GPU驱动的Bring-up}
-\cvline{-}{负责设计与实现针对AMDGPU Graphics Stack的Jenkins自动化测试系统}
+\cvline{-}{负责Navi系列GPU在Linux平台的Pre-silicon和Post-silicon Bring-up}
+\cvline{-}{负责实现Navi系列GPU在AMDGPU驱动中的IP Discovery/MCBP等新feature}
+\cvline{-}{负责设计与实现针对AMDGPU驱动的Jenkins自动化测试系统}
 \cvline{}{}
 
 \cvline{ }{\textcolor{Blue}{多媒体中间件工程师，安霸半导体(上海)有限公司} \hfill 2016年9月 - 2016年11月}
@@ -69,7 +71,7 @@
 \cvline{-}{负责Sensor中间件的开发与维护}
 \cvline{}{}
 
-\cvline{ }{\textcolor{Blue}{固件工程师， 上海奕华信息技术有限公司} \hfill 2013年8月 - 2014年5月}
+\cvline{ }{\textcolor{Blue}{固件工程师，上海奕华信息技术有限公司} \hfill 2013年8月 - 2014年5月}
 \cvline{-}{负责MCU以及专用安全芯片的固件开发}
 \cvline{-}{负责驱动/应用程序的代码实现，以及独立完成板级调试}
 %\cvline{-}{编写项目进程中的相关文档，包括相关项目文档和测试文档等}
@@ -77,27 +79,40 @@
 
 \section{项目经验}
 %\cvline{ }{\textcolor{Blue}{xxx} \hfill 201x年x月 - 201x年x月}
-%\cvline{项目简述}{xxx}
+%\cvline{项目介绍}{xxx}
 %\cvline{项目职责}{xxx}
 %\cvline{        }{xxx}
 %\cvline{}{}
 %
-\cvline{ }{\textcolor{Blue}{基于Zebu/Veloce Emulator的Pre-silicon GPU的Bring-up} \hfill 2018年6月 - 至今}
-\cvline{项目简述}{AMDGPU Driver需要在Pre-silicon阶段就开始开发与调试以减少Post-silicon之后的调试时间，从而缩短新一代GPU上市周期}
-\cvline{项目职责}{基于现有的驱动框架支持新一代的IP Core}
-\cvline{        }{与Emulator团队合作定位并修复潜在Bug}
+\cvline{ }{\textcolor{Blue}{AMDGPU MCBP功能的实现与性能分析} \hfill 2019年12月 - 2020年2月}
+\cvline{项目介绍}{MCBP(Mid-Command Buffer Preemption)用于dmaframe级别的抢占，可以使高优先级渲染进程提交到ring buffer的dmaframe抢占低优先级进程的，以此来缩短延迟和提高响应}
+\cvline{项目职责}{在AMDGPU驱动中使用gpu scheduler的调度接口以实现低优先级dmaframe的重新提交}
+\cvline{        }{实现Per-Context的CSA(Context Saving Area)的创建和映射到GPU虚拟地址空间}
+\cvline{        }{收集在不同负载下的OS主动抢占和HP3D Pipe抢占的延迟数据并统计延迟分布情况}
 \cvline{}{}
 
-\cvline{ }{\textcolor{Blue}{针对AMDGPU的Jenkins自动化测试系统的设计与实现} \hfill 2016年12月 - 2018年10月}
-\cvline{项目简述}{为了保证AMDGPU Driver的代码质量，需要搭建一套基于Jenkins的自动化编译/打包/部署/测试系统，此项目使用的主要编程语言是Bash/Python/Groovy}
-\cvline{项目职责}{从0设计并实现主从模式的部署/测试流程，目前支持30+台目标机，9代不同的GPU}
+\cvline{ }{\textcolor{Blue}{AMDGPU IP Discovery功能的实现与维护} \hfill 2019年6月 - 2019年8月}
+\cvline{项目介绍}{在AMDGPU驱动中实现IP Discovery用于从VRAM中获取寄存器基地址和IP核版本等信息}
+\cvline{项目职责}{和VBIOS团队讨论制定数据格式并在AMDGPU驱动中实现解析与查询功能}
+\cvline{        }{将功能代码合入drm-next社区开发分支并负责后期维护}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{基于Zebu/Veloce Emulator的Navi系列GPU的Bring-up} \hfill 2018年6月 - 2019年11月}
+\cvline{项目介绍}{AMDGPU驱动的支持需要提早到Navi14/Navi12的Pre-silicon阶段}
+\cvline{项目职责}{基于现有的AMDGPU驱动框架支持新一代的硬件IP核包括gfx, sdma和smu等}
+\cvline{        }{与Emulator和Firmware团队共同定位并修复潜在Bug}
+\cvline{}{}
+
+\cvline{ }{\textcolor{Blue}{针对AMDGPU的Jenkins自动化测试系统的设计与实现} \hfill 2016年12月 - 2018年1月}
+\cvline{项目介绍}{为了保证AMDGPU驱动的代码质量，需要搭建一套基于Jenkins的自动化编译/打包/部署/测试系统，此项目使用的主要编程语言是Bash/Python/Groovy}
+\cvline{项目职责}{从0设计并实现主从模式的部署/测试流程，目前支持30+台目标机，6代不同的GPU}
 \cvline{        }{支持每台目标机3分钟内自动重装各个Linux发行版(Ubuntu, Redhat, CentOS, SUSE等)}
 \cvline{        }{定制shUnit2单元测试框架以供QA方便编写测试脚本}
 \cvline{}{}
 
-\cvline{ }{\textcolor{Blue}{Sensor Service - 基于嵌入式Linux的Sensor中间件的实现} \hfill 2015年1月 - 2015年5月,}
+\cvline{ }{\textcolor{Blue}{Sensor Service - 基于嵌入式Linux的Sensor中间件的实现} \hfill 2015年1月 - 2015年5月}
 \cvline{ }{{} \hfill 2015年11月 - 2016年4月}
-\cvline{项目简述}{Sensor Service作为用户空间的Daemon程序负责为上层应用提供读取Sensor数据的统一的一套API，支持的Sensor包括加速度计/陀螺仪/磁力计/气压计/光传感器/TRAM/GNSS/Geofence}
+\cvline{项目介绍}{Sensor Service作为用户空间的Daemon程序负责为上层应用提供读取Sensor数据的统一的一套API，支持的Sensor包括加速度计/陀螺仪/磁力计/气压计/光传感器/TRAM/GNSS/Geofence}
 \cvline{项目职责}{设计并实现三种Sensor Plugin:}
 \cvline{        }{- 与IIO Sensor(如BMI160)交互的Plugin(Buffer/Direct模式)}
 \cvline{        }{- 与索尼SensorHub交互的Plugin(异步回调模式)}
@@ -106,17 +121,17 @@
 \cvline{        }{实现基于Sensor Service的各种Sample Client}
 \cvline{}{}
 
-\cvline{ }{\textcolor{Blue}{BMI160 Driver - 6轴传感器驱动的实现和性能优化} \hfill 2014年9月 - 2016年7月}
-\cvline{项目简述}{BMI160是一种6轴的加速度/陀螺仪，作为智能眼镜的姿态/运动状态的数据来源，要求其驱动能够实时为上层提供当前采样数据，并支持设置采样频率和水位等参数}
+\cvline{ }{\textcolor{Blue}{BMI160驱动 - 6轴传感器驱动的实现和性能优化} \hfill 2014年9月 - 2016年7月}
+\cvline{项目介绍}{BMI160是一种6轴的加速度/陀螺仪，作为智能眼镜的姿态/运动状态的数据来源，要求其驱动能够实时为上层提供当前采样数据，并支持设置采样频率和水位等参数}
 \cvline{项目职责}{实现基于Linux IIO驱动框架的BMI160驱动(当时开源版本还未出现)}
 \cvline{        }{添加能够强制读取当前HW Buffer中采样数据的Sysfs节点以降低数据延迟}
 \cvline{        }{支持Suspend/Resume功能以降低功耗}
 \cvline{}{}
 
-\cvline{ }{\textcolor{Blue}{UVC Gadget Driver - 将外设模拟成一个Composite USB设备} \hfill 2015年6月 - 2015年10月}
-\cvline{项目简述}{智能眼镜项目需要将外设(眼镜上的Camera)上采集到的图像上传到Host，使用Linux Kernel里已有的UVC Gadget是最初的一种方案}
+\cvline{ }{\textcolor{Blue}{UVC Gadget驱动 - 将外设模拟成一个Composite USB设备} \hfill 2015年6月 - 2015年10月}
+\cvline{项目介绍}{智能眼镜项目需要将外设(眼镜上的Camera)上采集到的图像上传到Host，使用Linux Kernel里已有的UVC Gadget是最初的一种方案}
 \cvline{项目职责}{Backport主线Kernel中的ConfigFS特性到公司使用的3.10版本的Kernel}
-\cvline{        }{配置Super-speed Buld类型的UVC(默认为Isochronous)}
+\cvline{        }{配置Super-speed Bulk类型的UVC(默认为Isochronous)}
 \cvline{        }{为UVCVIDEO和VIVI驱动添加YUV420视频格式的支持}
 \cvline{        }{编写基于ConfigFS配置和生成ACM+ECM+UVC Composite USB外设的脚本}
 \cvline{}{}
