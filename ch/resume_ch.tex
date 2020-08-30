@@ -21,8 +21,8 @@
 % personal data
 \firstname{袁晓杰}
 \familyname{}
-%\address{}{上海市浦东新区紫薇路}
-\mobile{18915778082}
+%\address{}{上海市浦东新区川和路}
+\mobile{17501664430}
 \email{yxj0207@gmail.com}
 \nopagenumbers{}
 
@@ -58,7 +58,7 @@
 
 \cvline{ }{\textcolor{Blue}{GPU驱动工程师，超威半导体(上海)有限公司} \hfill 2016年11日 - 至今}
 \cvline{-}{负责Navi系列GPU在Linux平台的Pre-silicon和Post-silicon Bring-up}
-\cvline{-}{负责实现Navi系列GPU在AMDGPU驱动中的IP Discovery/MCBP等新feature}
+\cvline{-}{负责实现Navi系列GPU在AMDGPU驱动中的IP Discovery/MCBP/MES等新feature}
 \cvline{-}{负责设计与实现针对AMDGPU驱动的Jenkins自动化测试系统}
 \cvline{}{}
 
@@ -84,16 +84,22 @@
 %\cvline{        }{xxx}
 %\cvline{}{}
 %
+\cvline{ }{\textcolor{Blue}{AMDGPU MES功能的实现} \hfill 2019年12月 - 2020年2月}
+\cvline{项目介绍}{MES(Micro-Engine Scheduler)是CP中新加入的一个HW Engine，用于创建和调度gfx/compute/sdma ring，在AMDGPU驱动中需要添加支持}
+\cvline{项目职责}{在AMDGPU驱动中实现打印MES固件状态(process/gang/queue)状态的调试接口}
+\cvline{        }{实现和调试MES的s3和gpu reset逻辑}
+\cvline{}{}
+
 \cvline{ }{\textcolor{Blue}{AMDGPU MCBP功能的实现与性能分析} \hfill 2019年12月 - 2020年2月}
-\cvline{项目介绍}{MCBP(Mid-Command Buffer Preemption)用于dmaframe级别的抢占，可以使高优先级渲染进程提交到ring buffer的dmaframe抢占低优先级进程的，以此来缩短延迟和提高响应}
-\cvline{项目职责}{在AMDGPU驱动中使用gpu scheduler的调度接口以实现低优先级dmaframe的重新提交}
+\cvline{项目介绍}{MCBP(Mid-Command Buffer Preemption)用于ib frame级别的抢占，可以使高优先级渲染进程提交到ring buffer的ib frame抢占低优先级进程的，以此来缩短延迟和提高响应}
+\cvline{项目职责}{在AMDGPU驱动中使用gpu scheduler的调度接口以实现低优先级ib frame的重新提交}
 \cvline{        }{实现Per-Context的CSA(Context Saving Area)的创建和映射到GPU虚拟地址空间}
 \cvline{        }{收集在不同负载下的OS主动抢占和HP3D Pipe抢占的延迟数据并统计延迟分布情况}
 \cvline{}{}
 
 \cvline{ }{\textcolor{Blue}{AMDGPU IP Discovery功能的实现与维护} \hfill 2019年6月 - 2019年8月}
 \cvline{项目介绍}{在AMDGPU驱动中实现IP Discovery用于从VRAM中获取寄存器基地址和IP核版本等信息}
-\cvline{项目职责}{和VBIOS团队讨论制定数据格式并在AMDGPU驱动中实现解析与查询功能}
+\cvline{项目职责}{和VBIOS团队讨论和修改数据格式并在AMDGPU驱动中实现解析与查询功能}
 \cvline{        }{将功能代码合入drm-next社区开发分支并负责后期维护}
 \cvline{}{}
 
